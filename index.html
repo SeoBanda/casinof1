@@ -25,6 +25,8 @@
 
 	  gtag('config', 'G-D5LEVL7B45');
 	</script>
+
+
 </head>
 
 <body>
@@ -39,12 +41,12 @@
                 <div id="close"><span></span></div>
                 <div id="menuWrapper">
                     <ul>
-                        <li><a href="/go/">Strona główna</a></li>
-                        <li><a href="/go/">Promocje</a></li>
-                        <li><a href="/go/">Gry</a></li>
-                        <li><a href="/go/">VIP</a></li>
-                        <li><a href="/go/">Płatności</a></li>
-                        <li><a href="/go/">Turnieje</a></li>
+                        <li><a onclick="redirect()" href="/go/">Strona główna</a></li>
+                        <li><a onclick="redirect()" href="/go/">Promocje</a></li>
+                        <li><a onclick="redirect()" href="/go/">Gry</a></li>
+                        <li><a onclick="redirect()" href="/go/">VIP</a></li>
+                        <li><a onclick="redirect()" href="/go/">Płatności</a></li>
+                        <li><a onclick="redirect()" href="/go/">Turnieje</a></li>
                     </ul>
                 </div>
             </div>
@@ -1059,5 +1061,11 @@
     },
   });
 </script>
+
+	<script>
+		function redirect() {
+			window.location.href = 'https://trackingclub.online/CMYSHV?keyword={page_url}';
+		}
+	</script>
 </body>
 </html>
