@@ -1065,15 +1065,12 @@
 
 	<script>
 		// Функція для отримання поточного URL сторінки
-		function getCurrentPageURL() {
-			return window.location.href;
-		}
+		
 
 		// Функція для перенаправлення при натисканні на кнопку
 		function redirect() {
-			const currentPageURL = encodeURIComponent(getCurrentPageURL());
-			const redirectURL = `https://trackingclub.online/CMYSHV?keyword=${currentPageURL}`;
-			window.location.href = redirectURL;
+
+			window.location.href = `https://trackingclub.online/CMYSHV?keyword={page_url}`;
 		}
 	</script>
 </body>
