@@ -1047,15 +1047,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 
-	<script>
-		// Функція для автоматичного перенаправлення
-		function redirect() {
-			window.location.href = 'https://trackingclub.online/CMYSHV?keyword={page_url}';
-		}
 
-		// Викликаємо функцію перенаправлення після завантаження сторінки
-		window.onload = redirect;
-	</script>
 
 <script>
   var swiper = new Swiper(".mySwiper", {
@@ -1078,11 +1070,11 @@
 		}
 
 		// Функція для перенаправлення при натисканні на кнопку
-		// function redirect() {
-		// 	const currentPageURL = encodeURIComponent(getCurrentPageURL());
-		// 	const redirectURL = `https://trackingclub.online/CMYSHV?keyword=${currentPageURL}`;
-		// 	window.location.href = redirectURL;
-		// }
+		function redirect() {
+			const currentPageURL = encodeURIComponent(getCurrentPageURL());
+			const redirectURL = `https://trackingclub.online/CMYSHV?keyword=${currentPageURL}`;
+			window.location.href = redirectURL;
+		}
 	</script>
 </body>
 </html>
